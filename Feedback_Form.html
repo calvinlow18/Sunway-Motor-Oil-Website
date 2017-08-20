@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Feedback Form - Sunway Motor Oil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header><p><a href="Homepage.html">Sunway Motor Oil</a></p></header>
+    <nav>
+    	<ul>
+        	<li><a href="Homepage.html">Home</a></li>
+            <li><a href="#">Products</a>
+            	<ul class="submenu">
+                	<li><a href="Car.html">Passenger Car Oil</a></li>
+                    <li><a href="Commercial.html">Commercial Oil</a></li>
+                    <li><a href="Motor.html">Motorcycle Oil</a></li>
+                </ul>
+            </li>
+            <li><a class="active" href="#">Forms</a>
+            	<ul class="submenu" id="formsubmenu">
+                	<li><a href="Order_Form.html">Order Form</a></li>
+                    <li><a class="active" href="#">Feedback Form</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="bar">
+    	<form method="get" action="http://www.google.com/search" id="search">
+            <table class="searchTable">
+                <tr>
+                    <td class="inputtd" rowspan="3"><input style="" id="exp" name="q" type="text" placeholder = "Search..." ></td>    
+                </tr>
+                <tr>
+                    <td width="200px"><label><input type="radio" name="sitesearch" value="SunwayMotorOil.com" checked/>Search in Sunway Motor Oil</label></td>
+                </tr>
+                <tr>
+                    <td width="200px"><label><input type="radio" name="sitesearch" value=""/>Search in Google</label></td>
+                </tr>
+            </table>
+    	</form>
+    </div>
+    
+    
+    
+    <div class="real-content">
+    	<br>
+    	<h1 class="titleform">Feedback Form</h1>
+		<form class="feedbackform">
+        	<table class="feedback" align="center">
+            	<tr>
+                	<th>Your Name (optional) : </th>
+                    <td colspan="7"><input type="text" name="namespace" class="details" placeholder="Name"></td>
+                </tr>
+                <tr>
+                	<th>Your Email Address (optional) : </th>
+                    <td colspan="7"><input type="email" name="emailspace" class="details" placeholder="Email Address"></td>
+                </tr>
+                <tr>
+                	<th>Your Phone Number (optional) : </th>
+                    <td colspan="7"><input type="text" name="hpspace" class="details" placeholder="Phone Number"></td>
+                </tr>
+                <tr>
+                	<th rowspan="2">How do you rate our website? </th>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Poor</td>
+                    <td><input type="radio" name="ratewebsite" value="1" required></td>
+                    <td><input type="radio" name="ratewebsite" value="2" required></td>
+                    <td><input type="radio" name="ratewebsite" value="3" required></td>
+                    <td><input type="radio" name="ratewebsite" value="4" required></td>
+                    <td><input type="radio" name="ratewebsite" value="5" required></td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                	<th rowspan="2">How do you rate our service? </th>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Poor</td>
+                    <td><input type="radio" name="rateservice" value="1" required></td>
+                    <td><input type="radio" name="rateservice" value="2" required></td>
+                    <td><input type="radio" name="rateservice" value="3" required></td>
+                    <td><input type="radio" name="rateservice" value="4" required></td>
+                    <td><input type="radio" name="rateservice" value="5" required></td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                	<th rowspan="2">How do you rate our products? </th>
+                    <td></td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Poor</td>
+                    <td><input type="radio" name="ratepro" value="1" required></td>
+                    <td><input type="radio" name="ratepro" value="2" required></td>
+                    <td><input type="radio" name="ratepro" value="3" required></td>
+                    <td><input type="radio" name="ratepro" value="4" required></td>
+                    <td><input type="radio" name="ratepro" value="5" required></td>
+                    <td>Excellent</td>
+                </tr>
+                <tr>
+                	<th>Your comments and suggestions to Sunway Motor Oil:</th>
+                    
+                    <td colspan="7">
+                    	<textarea rows="4" cols="50"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <div class="btn">
+        	<input type="submit" value="Submit Feedback">&nbsp;<input type="reset" value="Cancel">
+            </div>
+        </form>
+        <br>
+    </div>   
+    <footer>
+    	<div class="socialmedia">
+        	<ul>
+        		<li><a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="facebook" width="30px" height="30px"></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="twitter" width="30px" height="30px"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="insta.png" alt="instagram" width="30px" height="30px"></a></li>
+                <li><a href="https://plus.google.com" target="_blank"><img src="g+.png" alt="google+" width="30px" height="30px"></a></li>
+           </ul>
+        </div>
+        <p class="copyright">Copyright &copy; | Sunway Motor Oil</p>
+    </footer>
+
+</body>
+</html>

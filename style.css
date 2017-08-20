@@ -1,0 +1,309 @@
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:600);
+html {
+ background-color:#ccc;
+ width:100%;
+ margin-top:-17px;
+}
+body {
+ margin:0px;
+ padding:0px; 
+}
+header {
+ height:125px;
+ width:100%;
+ background-color:#444;
+ border-bottom: 5px solid #005f5f;
+ //background-image:url(header.jpg);
+ //background-repeat:no-repeat;
+ //background-position:left center;
+ //background-size: 100% 100%; 
+}
+header p {
+	text-align:center;
+}
+header p a {
+	width:100%;
+	font-family: 'Josefin Sans', sans-serif;
+	color:white;
+	font-size:100px;
+	margin:0;
+	text-align:center;
+	text-shadow:0 0 0.35em #8F7;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-decoration:none;
+	color:white;
+}
+#search {
+ margin:5px;
+ //padding-top:0px;
+ float:right;
+ //opacity:0.4;
+ //filter:alpha(opacity=40);
+}
+#search #exp {
+ background:url(search.png) no-repeat 10px center #303232;
+ border: 0 none;
+ font: bold 12px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ color:#777;
+ width:100px;
+ padding: 15px 20px 15px 35px;
+ border-radius:5px;
+ transition: .7s;
+}
+
+#search #exp:focus {
+ width:95%;
+ //margin-left:20px;
+ box-sizing:border-box;
+}
+#search table tr td {
+ font: bold 12px Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+ color:#303232;
+}
+nav {
+ text-align:center;
+ //alignment-adjust:auto;
+ //border-bottom:hidden;
+ //border-bottom-style:solid;
+}
+nav ul {
+ list-style-type:none;
+ margin-left:-40px;
+ margin-top:-18px;
+}
+
+nav ul li a{
+ display:block;
+ transition: .3s background-color;
+ text-decoration:none;
+ color:white;
+ font-family:sans-serif;
+ background-color:#444;
+ padding:10px 0px;
+ float:left;
+ width:20%;
+}
+
+nav ul li a:hover {
+ background-color:#005f5f;
+}
+
+nav ul li a.active {
+ background-color:#fff;
+ color:black;
+ cursor:default;
+}
+
+nav ul li {
+ background-color:#444;
+ position:relative;
+}
+
+nav ul li ul.submenu {
+ display:none;
+}
+
+.submenu li a{
+	width:15%;
+}
+
+.submenu li:first-child a {
+	margin-left:7.5%;
+}
+
+nav ul li ul#formsubmenu {
+ margin-left:24.5%;
+}
+
+nav ul li:hover > ul {
+ display:block;
+ position:absolute;
+ margin-top:38px;
+ width:100%;
+ z-index:2;
+}
+
+footer {
+ height:150px;
+ background-color:#444;
+ margin-top:-16px;
+ border-top:medium solid #005f5f;
+}
+
+footer p.copyright {
+ text-align:center;
+ color:white;
+ margin-top:100px;
+}
+
+.oil {
+ margin:137px 10px 28px 10px;
+ border-radius:20px 20px 20px 20px;
+ background-color:white;
+ padding-right:40px;
+}
+
+div.socialmedia {
+ float:right;
+}
+div.socialmedia ul{
+ list-style-type:none;
+}
+div.socialmedia ul li{
+ display:inline-block;
+ margin:10px;
+}
+.bar {
+ margin:48px 10px 0px 0px;
+ //border-radius:20px 20px 20px 20px;
+ //background-color:grey;
+ position:absolute;
+ //left:900px;
+ //clear:both;
+ //height:30px;
+ width:100%;
+ color:#303232;
+}
+.bar form {
+ width:100%;
+}
+input[type=radio] {
+ margin-top: -1px;
+ vertical-align: middle;
+}
+.searchTable {
+ table-layout:auto;
+    width:100%;
+ padding-left:20px;
+}
+.inputtd {
+ text-align:right;
+}
+.oil table tr td {
+	vertical-align:top;
+	text-align:justify;
+}
+.oil table {
+	table-layout:fixed;
+}
+.oil table tr td:nth-child(1) {
+	width:270px;
+	text-align:center;
+}
+.oil table tr td:nth-child(n+2) {
+	padding-left:25px;
+}
+form.feedbackform {
+	margin-top:50px;
+}
+
+table.feedback {
+	border-collapse:collapse;
+	margin:0 auto;
+}
+
+table.feedback tr th {
+	text-align:left;
+	font-size:20px;
+}
+table.feedback tr th, table.feedback tr td {
+	padding-bottom:30px;
+}
+table.feedback tr:nth-child(4) td, table.feedback tr:nth-child(6) td, table.feedback tr:nth-child(8) td {
+	border-top:1px solid black;
+	border-bottom:1px solid black;
+	padding:0;
+}
+table.feedback tr td {
+	text-align:center;
+}
+table.feedback tr:nth-child(5) td:last-child, table.feedback tr:nth-child(7) td:last-child, table.feedback tr:nth-child(9) td:last-child {
+	width:30px;
+	text-align:left;
+}
+table.feedback tr:nth-child(5) td:first-child, table.feedback tr:nth-child(7) td:first-child, table.feedback tr:nth-child(9) td:first-child {
+	text-align:right;
+	width:20px;
+}
+.btn {
+	text-align:center;
+}
+input[type=text], input[type=email], textarea {
+	font-size:16px;
+	padding:5px;
+	width:100%;
+}
+.real-content {
+ margin:137px 10px 28px 10px;
+ border-radius:20px 20px 20px 20px;
+ background-color:white;
+}
+.titleform {
+	width:30%;
+	text-align:center;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+	border:10px ridge #E3E3E3;
+	box-shadow: 5px 5px 8px #888888;
+	margin-left:auto;
+	margin-right:auto;
+}
+table.up {
+	width:100%;
+	text-align:left;
+	padding-left:100px;
+}
+input.formText {
+	width:80%;
+}
+input.fulladd {
+	width:90%;
+}
+th.topic {
+	padding-top:20px;
+	font-size:20px;
+	
+}
+table.down {
+	width:90%;
+	border:1px solid black;
+	border-collapse:collapse;
+	margin-top:40px;
+
+}
+select {
+	width:82%;
+	height:96%;
+	font-size:16px;
+}
+table.down tr th, table.down tr td {
+	border:1px solid black;
+}
+table.down tr:first-child th, table.down tr:last-child th {
+	font-size:25px
+}
+div.btnPosition {
+	margin-top:30px;
+	text-align:center;
+}
+input[type=number] {
+	text-align:center;
+}
+.suboil {
+	font-size:22px;
+	padding:8px
+}
+.hometable {
+	table-layout:fixed;
+}
+.homebutton {
+	border-radius:10px;
+	border:6px solid black;
+}
+.aboutus {
+	text-align:justify;
+	padding:20px 60px 60px 60px;
+	font-size:20px;
+}

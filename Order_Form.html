@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Order Form - Sunway Motor Oil</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header><p><a href="Homepage.html">Sunway Motor Oil</a></p></header>
+    <nav>
+    	<ul>
+        	<li><a href="Homepage.html">Home</a></li>
+            <li><a href="#">Products</a>
+            	<ul class="submenu">
+                	<li><a href="Car.html">Passenger Car Oil</a></li>
+                    <li><a href="Commercial.html">Commercial Oil</a></li>
+                    <li><a href="Motor.html">Motorcycle Oil</a></li>
+                </ul>
+            </li>
+            <li><a class="active" href="#">Forms</a>
+            	<ul class="submenu" id="formsubmenu">
+                	<li><a class="active" href="#">Order Form</a></li>
+                    <li><a href="Feedback_Form.html">Feedback Form</a></li>
+                </ul>
+            </li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="bar">
+    	<form method="get" action="http://www.google.com/search" id="search">
+            <table class="searchTable">
+                <tr>
+                    <td class="inputtd" rowspan="3"><input style="" id="exp" name="q" type="text" placeholder = "Search..." ></td>    
+                </tr>
+                <tr>
+                    <td width="200px"><label><input type="radio" name="sitesearch" value="SunwayMotorOil.com" checked/>Search in Sunway Motor Oil</label></td>
+                </tr>
+                <tr>
+                    <td width="200px"><label><input type="radio" name="sitesearch" value=""/>Search in Google</label></td>
+                </tr>
+            </table>
+    	</form>
+    </div>
+    
+    
+    
+    <div class="real-content">
+    	<br>
+    	<form id="orderForm">
+            	<h1 class="titleform">Order Form</h1>
+            	<table align="center" class="up">
+                	<tr>
+                    	<th class="topic">First Name</th>
+                        <th class="topic">Last Name</th>
+                    </tr>
+                	<tr>
+                    	<th><input class="formText" type="text" name="fname" placeholder="First Name" required></th>
+                        <th><input class="formText" type="text" name="lname" placeholder="Last Name" required></th>
+                    </tr>
+                    <tr>
+                    	<th class="topic">Address</th>
+                    </tr>
+                    <tr>
+                    	<th colspan="2"><input class="fulladd" type="text" name="address" placeholder="Address Line 1" required><br><input class="fulladd" type="text" name="address" placeholder="Address Line 2" style="margin-top:3px"></th>
+                    </tr>
+                    <tr>
+                    	<th class="topic">Postal Code</th>
+                        <th class="topic">City</th>
+                    </tr>
+                    <tr>
+                    	<th><input class="formText" type="text" name="postalCode" placeholder="Postal Code" required></th>
+                        <th>
+                        	<input class="formText" type="text" name="city" placeholder="City" required>
+                        </th>
+                    </tr>
+                    <tr>
+                    	<th class="topic">State</th>
+                        <th class="topic">Country</th>
+                    </tr>
+                    <tr>
+                    	<th>
+                        	<select name="state" value="state">
+                            	<option value="johor">Johor</option>
+                                <option value="kedah">Kedah</option>
+                                <option value="kelantan">Kelantan</option>
+                                <option value="malacca">Malacca</option>
+                                <option value="negerisembilan">Negeri Sembilan</option>
+                                <option value="pahang">Pahang</option>
+                                <option value="penang">Penang</option>
+                                <option value="perak">Perak</option>
+                                <option value="perlis">Perlis</option>
+                                <option value="sabah">Sabah</option>
+                                <option value="sarawak">Sarawak</option>
+                                <option value="selangor">Selangor</option>
+                                <option value="terengganu">Terengganu</option>
+                                <option value="kualalumpur">Kuala Lumpur</option>
+                                <option value="labuan">Labuan</option>
+                                <option value="putrajaya">Putrajaya</option>
+                        	</select>
+                                
+                        </th>
+                        <th><input class="formText" type="text" name="country" placeholder="Country" value="Malaysia" disabled></th>
+                    </tr>
+                    <tr>
+                    	<th class="topic">Email Address</th>
+                        <th class="topic">Phone Number</th>
+                    </tr>
+                    <tr>
+                    	<th><input class="formText" type="email" name="email" placeholder="Email Address"></th>
+                        <th>
+                        	<input class="formText" type="text" name="phone" placeholder="Phone Number">
+                        </th>
+                    </tr>
+                </table>
+                <table align="center" class="down">
+               	  <col width="40px">
+                    <tr>
+                        <th>No</th>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th width="200px">Subtotal</th>
+                    </tr>
+                    <tr>
+                    	<th class="suboil" colspan="5">Passenger Car Oil</th>
+                    </tr>
+                    <tr>
+                        <th>1</th>
+                        <th>Kixx Pao 1</th>
+                        <th>RM 95.50</th>
+                        <th>
+                            <input type="number" name="quan1" id="quan1" class="qtt" min="0" max="999" step="1" value="0" onChange="calc1()" onKeyUp="calc1()">
+                        </th>
+                      <th id="sub1" on>RM 0.00</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <th>Kixx G1 SN/CF</th>
+                        <th>RM 121.70</th>
+                        <th>
+                            <input type="number" name="quan2" id="quan2" class="qtt" min="0" max="999" step="1" value="0" onChange="calc2()" onKeyUp="calc2()">
+                        </th>
+                      <th id="sub2">RM 0.00</th>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <th>Kixx Pao</th>
+                        <th>RM 100.20</th>
+                        <th>
+                            <input type="number" name="quan3" id="quan3" class="qtt" min="0" max="999" step="1" value="0" onChange="calc3()" onKeyUp="calc3()">
+                        </th>
+                      <th id="sub3">RM 0.00</th>
+                    </tr>
+                    <tr>
+                    	<th class="suboil" colspan="5">Commercial Oil</th>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <th>Kixx HDX</th>
+                        <th>RM 98.80</th>
+                        <th>
+                            <input type="number" name="quan4" id="quan4" class="qtt" min="0" max="999" step="1" value="0" onChange="calc4()" onKeyUp="calc4()">
+                        </th>
+                      <th id="sub4">RM 0.00</th>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <th>Kixx HD CH</th>
+                        <th>RM 122.20</th>
+                        <th>
+                            <input type="number" name="quan5" id="quan5" class="qtt" min="0" max="999" step="1" value="0" onChange="calc5()" onKeyUp="calc5()">
+                        </th>
+                      <th id="sub5">RM 0.00</th>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <th>Kixx HD1</th>
+                        <th>RM 111.10</th>
+                        <th>
+                            <input type="number" name="quan6" id="quan6" class="qtt" min="0" max="999" step="1" value="0" onChange="calc6()" onKeyUp="calc5()">
+                        </th>
+                      <th id="sub6">RM 0.00</th>
+                    </tr>
+                    <tr>
+                    	<th class="suboil" colspan="5">Motorcycle Oil</th>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <th>Kixx Ultra 2T</th>
+                        <th>RM 120.50</th>
+                        <th>
+                            <input type="number" name="quan7" id="quan7" class="qtt" min="0" max="999" step="1" value="0" onChange="calc7()" onKeyUp="calc5()">
+                        </th>
+                      <th id="sub7">RM 0.00</th>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <th>Kixx Ultra 4T</th>
+                        <th>RM 125.50</th>
+                        <th>
+                            <input type="number" name="quan8" id="quan8" class="qtt" min="0" max="999" step="1" value="0" onChange="calc8()" onKeyUp="calc5()">
+                        </th>
+                      <th id="sub8">RM 0.00</th>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <th>Kixx Ultra 4T SN/MB</th>
+                        <th>RM 130.50</th>
+                        <th>
+                            <input type="number" name="quan9" id="quan9" class="qtt" min="0" max="999" step="1" value="0" onChange="calc9()" onKeyUp="calc5()">
+                        </th>
+                      <th id="sub9">RM 0.00</th>
+                    </tr>
+                    <tr>
+                    	<th colspan="4">Total</th>
+                        <th id="total">RM 0.00</th>
+                    </tr>
+                </table>
+                <div class="btnPosition">
+                    <input class="btn" type="submit" value="Submit" onClick="confirmation()">
+                    <input class="btn" type="reset" value="Reset" onClick="resetAll()">
+                </div>
+                <br>
+				<script>
+                    var s1 = 0;
+                    var s2 = 0;
+                    var s3 = 0;
+                    var s4 = 0;
+                    var s5 = 0;
+                    var s6 = 0;
+                    var s7 = 0;
+                    var s8 = 0;
+                    var s9 = 0;
+                    function countTotal() {
+                        var total = s1 + s2 + s3 + s4 + s5 + s6 + s7 + s8 + s9;	
+                        document.getElementById("total").innerHTML = "RM " + parseFloat(Math.round(total * 100) / 100).toFixed(2);
+                    }
+                    function calc1() {
+                        if (document.getElementById("quan1").value >= 0 && document.getElementById("quan1").value <= 999) {
+                            s1 = document.getElementById("quan1").value * 95.5;
+                            document.getElementById("sub1").innerHTML = "RM " + parseFloat(Math.round(s1 * 100) / 100).toFixed(2);
+                            countTotal();
+                        } else {
+                            alert("Quantity must be between 0 and 999.");
+                            document.getElementById("quan1").value = 0;
+                        }
+                        
+                    }
+                    function calc2() {
+                        if (document.getElementById("quan2").value >= 0 && document.getElementById("quan2").value <= 999) {
+                            s2 = document.getElementById("quan2").value * 121.7;
+                            document.getElementById("sub2").innerHTML = "RM " + parseFloat(Math.round(s2 * 100) / 100).toFixed(2);
+                            countTotal();
+                        } else {
+                            alert("Quantity must be between 0 and 999.");
+                            document.getElementById("quan2").value = 0;
+                        }
+                    }
+                    function calc3() {
+                        if (document.getElementById("quan3").value >= 0 && document.getElementById("quan3").value <= 999) {
+                            s3 = document.getElementById("quan3").value * 100.2;
+                            document.getElementById("sub3").innerHTML = "RM " + parseFloat(Math.round(s3 * 100) / 100).toFixed(2);
+                            countTotal();
+                        } else {
+                            alert("Quantity must be between 0 and 999.");
+                            document.getElementById("quan3").value = 0;
+                        }
+                    }
+                    function calc4() {
+                        if (document.getElementById("quan4").value >= 0 && document.getElementById("quan4").value <= 999) {
+                            s4 = document.getElementById("quan4").value * 98.8;
+                            document.getElementById("sub4").innerHTML = "RM " + parseFloat(Math.round(s4 * 100) / 100).toFixed(2);
+                            countTotal();
+                        } else {
+                            alert("Quantity must be between 0 and 999.");
+                            document.getElementById("quan4").value = 0;
+                        }
+                        
+                    }
+                    function calc5() {
+                        if (document.getElementById("quan5").value >= 0 && document.getElementById("quan5").value <= 999) {
+                            s5 = document.getElementById("quan5").value * 122.2;
+                            document.getElementById("sub5").innerHTML = "RM " + parseFloat(Math.round(s5 * 100) / 100).toFixed(2);
+                            countTotal();
+                        } else {
+                            alert("Quantity must be between 0 and 999.");
+                            document.getElementById("quan5").value = 0;
+                        }
+                        
+                    }
+                    function calc6() {
+                        if (document.getElementById("quan6").value >= 0 && document.getElementById("quan6").value <= 999) {
+                            s6 = document.getElementById("quan6").value * 111.1;
+                            document.getElementById("sub6").innerHTML = "RM " + parseFloat(Math.round(s6 * 100) / 100).toFixed(2);	
+                            countTotal();
+                        } else {
+                            alert("Quantity must be between 0 and 999.");
+                            document.getElementById("quan6").value = 0;
+                        }
+                        
+                    }
+                    function calc7() {
+                        if (document.getElementById("quan7").value >= 0 && document.getElementById("quan7").value <= 999) {
+                            s7 = document.getElementById("quan7").value * 120.5;
+                            document.getElementById("sub7").innerHTML = "RM " + parseFloat(Math.round(s7 * 100) / 100).toFixed(2);	
+                            countTotal();
+                        } else {
+                            alert("Quantity must be between 0 and 999.");
+                            document.getElementById("quan7").value = 0;
+                        }
+                        
+                    }
+                    function calc8() {
+                        if (document.getElementById("quan8").value >= 0 && document.getElementById("quan8").value <= 999) {
+                            s8 = document.getElementById("quan8").value * 125.5;
+                            document.getElementById("sub8").innerHTML = "RM " + parseFloat(Math.round(s8 * 100) / 100).toFixed(2);	
+                            countTotal();
+                        } else {
+                            alert("Quantity must be between 0 and 999.");
+                            document.getElementById("quan8").value = 0;
+                        }
+                        
+                        
+                    }
+                    function calc9() {
+                        if (document.getElementById("quan9").value >= 0 && document.getElementById("quan9").value <= 999) {
+                            s9 = document.getElementById("quan9").value * 130.5;
+                            document.getElementById("sub9").innerHTML = "RM " + parseFloat(Math.round(s9 * 100) / 100).toFixed(2);	
+                            countTotal();
+                        } else {
+                            alert("Quantity must be between 0 and 999.");
+                            document.getElementById("quan9").value = 0;
+                        }
+                        
+                    }
+                    function confirmation() {
+                            var x = document.getElementById("total").innerHTML;
+                            if (x == "RM 0.00") {
+                                alert("Please select the quantity of products that you would like to buy.");	
+                            } else {
+                                confirm("Total price will be " + x);
+                            }
+                            
+                    }
+					function resetAll() {
+							document.getElementById("sub1").innerHTML = "RM 0.00";
+							document.getElementById("sub2").innerHTML = "RM 0.00";
+							document.getElementById("sub3").innerHTML = "RM 0.00";
+							document.getElementById("sub4").innerHTML = "RM 0.00";
+							document.getElementById("sub5").innerHTML = "RM 0.00";
+							document.getElementById("sub6").innerHTML = "RM 0.00";
+							document.getElementById("sub7").innerHTML = "RM 0.00";
+							document.getElementById("sub8").innerHTML = "RM 0.00";
+							document.getElementById("sub9").innerHTML = "RM 0.00";
+							document.getElementById("total").innerHTML = "RM 0.00";
+					}
+                </script>
+        </form>
+    </div>   
+    <footer>
+    	<div class="socialmedia">
+        	<ul>
+        		<li><a href="https://www.facebook.com" target="_blank"><img src="facebook.png" alt="facebook" width="30px" height="30px"></a></li>
+                <li><a href="https://www.twitter.com" target="_blank"><img src="twitter.png" alt="twitter" width="30px" height="30px"></a></li>
+                <li><a href="https://www.instagram.com" target="_blank"><img src="insta.png" alt="instagram" width="30px" height="30px"></a></li>
+                <li><a href="https://plus.google.com" target="_blank"><img src="g+.png" alt="google+" width="30px" height="30px"></a></li>
+           </ul>
+        </div>
+        <p class="copyright">Copyright &copy; | Sunway Motor Oil</p>
+    </footer>
+
+</body>
+</html>
